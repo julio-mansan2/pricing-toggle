@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pricing Toggle - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30 day trial. No credit card required.</p>
+    </header>
+    <main class="main">
+        <section class="box-container">
+            <section class="price">
+                <span class="pageviews">1 0 0 k &nbsp p a g e v i e w s</span>
+                <div class="price-desktop">
+                    <h2>$16,00</h2>
+                    <span>/month</span>
+                </div>
+            </section>
+            <input type="range" id="range" min="1" max="5" value="3">
+            <div class="price-mobile">
+                <h2>$16,00</h2>
+                <span>/month</span>
+            </div>
+            <section class="toggle">
+                <p class="">Monthly Billing</p>
+                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                <div>
+                    <p class="">Yearly Billing</p>
+                    <span class="discount-desktop">25% discount</span>
+                    <span class="discount-mobile">-25%</span>
+                </div>
+            </section>
+            <hr>
+            <section class="benefits">
+                <ul>
+                    <li>
+                        <img src="./src/images/icon-check.svg" alt="icon-check">
+                        Unlimited websites
+                    </li>
+                    <li>
+                        <img src="./src/images/icon-check.svg" alt="icon-check">
+                        100% data ownership
+                    </li>
+                    <li>
+                        <img src="./src/images/icon-check.svg" alt="icon-check">
+                        Email reports
+                    </li>
+                </ul>
+                <button>Start my trial</button>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

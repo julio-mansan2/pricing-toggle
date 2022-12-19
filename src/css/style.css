@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+body {
+    height: 100vh;
+    font-family: 'Manrope';
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main';
+    grid-template-rows: repeat(2,1fr);
+}
+
+.header {
+    grid-area: header;
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url(../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-color: hsl(224, 65%, 95%);
+}
+
+.header h1 {
+    color: hsl(227, 35%, 25%);
+    font-weight: 800;
+}
+
+.header p {
+    color: hsl(225, 20%, 60%);
+}
+
+.main {
+    grid-area: main;
+    background-color: hsl(230, 100%, 99%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    position: relative;
+}
+
+.box-container {
+    position: absolute;
+    top: -35%;
+    background: #fff;
+    left: 30%;
+    right: 30%;
+    padding: 40px 30px 70px 30px;
+    border-radius: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.price span {
+    color: hsl(225, 20%, 60%);
+}
+
+.pageviews {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.price div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.price-mobile {
+    display: none;
+}
+
+.discount-mobile {
+    display: none;
+}
+
+.price-mobile span {
+    color: hsl(225, 20%, 60%);
+}
+
+h2 {
+    font-size: 2rem;
+    color: hsl(227, 35%, 25%);
+    font-weight: 800;
+}
+
+#range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: hsl(224, 65%, 95%);
+    outline: none;
+    height: 10px;
+    border-radius: 9px;
+    margin-bottom: 40px;
+}
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsl(174, 86%, 45%) url(../images/icon-slider.svg) no-repeat center center;
+    cursor: pointer;
+}
+
+.toggle {
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.toggle div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle p {
+    color: hsl(225, 20%, 60%);
+}
+
+.toggle span {
+    padding: 5px 10px;
+    border-radius: 100px;
+    color: hsl(15, 100%, 70%);
+    background: hsl(14, 92%, 95%);
+}
+
+.toggle .discount {
+    padding: 0;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 3.5rem;
+    height: 1.5rem;
+    background-color: hsl(223, 50%, 87%);
+    display: block;
+    border-radius: 6.25rem;
+    position: relative;
+    transition: 0.3s;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 0.25rem;
+    left: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 5.6rem;
+    transition: 0.3s;
+}
+
+label:hover {
+    opacity: 0.7;
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: #fff;
+}
+
+hr {
+    margin-bottom: 30px;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    height: 1px;
+    background: hsl(223, 50%, 87%);
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: hsl(225, 20%, 60%);
+}
+
+.benefits li img {
+    margin-right: 15px;
+}
+
+button {
+    background: hsl(227, 35%, 25%);
+    color: hsl(226, 100%, 87%);
+    padding: 10px 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
