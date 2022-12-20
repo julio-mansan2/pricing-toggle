@@ -14,19 +14,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px 70px;
+        padding: 2.5rem 1.25rem 4.3rem;
     }
     
-    .price .price-desktop {
-        display: none;
+    .price {
+        position: relative;
     }
 
-    .price-mobile {
-        display: flex;
-        display: flex;
-        gap: 5px;
-        align-items: center;
-        margin-bottom: 35px;
+    #range {
+        margin-bottom: 6.25rem;
+    }
+
+    .price .bill-time {
+        position: absolute;
+        bottom: -500%;
     }
 
     .discount-desktop {
@@ -37,10 +38,15 @@
         display: block;
     }
     
+    hr {
+        top: 50%;
+    }
+
     .toggle {
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 0.6rem;
+        padding-right: 0;
     }
 
     label {
@@ -48,12 +54,12 @@
     }
 
     .toggle div {
-        gap: 5px;
+        gap: 0.3rem;
     }
 
     .benefits {
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 }
 
@@ -65,6 +71,8 @@
 
     .toggle {
         justify-content: center;
+        padding-right: 0;
+        position: relative;
     }
     
     .discount-desktop {
@@ -73,5 +81,7 @@
 
     .discount-mobile {
         display: block;
+        position: absolute;
+        right: 10%;
     }
 }

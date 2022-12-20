@@ -16,25 +16,22 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    background-image: url(../images/pattern-circles.svg);
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    background-color: hsl(224, 65%, 95%);
+    gap: 1.25rem;
+    background: var(--light-grayish-blue) url(../images/pattern-circles.svg) center 20% no-repeat;
 }
 
 .header h1 {
-    color: hsl(227, 35%, 25%);
+    color: var(--dark-desatured-blue);
     font-weight: 800;
 }
 
 .header p {
-    color: hsl(225, 20%, 60%);
+    color: var(--grayish-blue);
 }
 
 .main {
     grid-area: main;
-    background-color: hsl(230, 100%, 99%);
+    background-color: var(--very-pale-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,13 +39,17 @@ body {
     position: relative;
 }
 
+.bg_change {
+    background-color: var(--strong-cyan);
+}
+
 .box-container {
     position: absolute;
     top: -35%;
-    background: #fff;
+    background: var(--white);
     left: 30%;
     right: 30%;
-    padding: 40px 30px 70px 30px;
+    padding: 2.5rem 1.8rem 4.3rem 1.8rem;
     border-radius: 10px;
 }
 
@@ -56,11 +57,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
+}
+
+.price .dollar {
+    color: var(--dark-desatured-blue);
+    font-size: 1.4rem;
 }
 
 .price span {
-    color: hsl(225, 20%, 60%);
+    color: var(--grayish-blue);
 }
 
 .pageviews {
@@ -70,7 +76,7 @@ body {
 
 .price div {
     display: flex;
-    gap: 5px;
+    gap: 0.3rem;
     align-items: center;
 }
 
@@ -83,12 +89,12 @@ body {
 }
 
 .price-mobile span {
-    color: hsl(225, 20%, 60%);
+    color: var(--grayish-blue);
 }
 
 h2 {
     font-size: 2rem;
-    color: hsl(227, 35%, 25%);
+    color: var(--dark-desatured-blue);
     font-weight: 800;
 }
 
@@ -96,47 +102,49 @@ h2 {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    background: hsl(224, 65%, 95%);
+    background: var(--light-grayish-blue);
     outline: none;
-    height: 10px;
+    height: 0.6rem;
     border-radius: 9px;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 #range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
-    background: hsl(174, 86%, 45%) url(../images/icon-slider.svg) no-repeat center center;
+    background: var(--strong-cyan) url(../images/icon-slider.svg) no-repeat center center;
     cursor: pointer;
+    filter: drop-shadow(0px 5px 5px hsl(226, 100%, 87%));
 }
 
 .toggle {
     display: flex;
     position: relative;
-    font-size: 14px;
+    font-size: 0.8rem;
     justify-content: flex-end;
-    gap: 10px;
-    margin-bottom: 70px;
+    gap: 0.6rem;
+    margin-bottom: 4.3rem;
+    padding-right: 1.4rem;
 }
 
 .toggle div {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.6rem;
 }
 
 .toggle p {
-    color: hsl(225, 20%, 60%);
+    color: var(--grayish-blue);
 }
 
 .toggle span {
-    padding: 5px 10px;
-    border-radius: 100px;
-    color: hsl(15, 100%, 70%);
-    background: hsl(14, 92%, 95%);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6.25rem;
+    color: var(--light-red);
+    background: var(--light-grayish-red);
 }
 
 .toggle .discount {
@@ -154,7 +162,7 @@ label {
     text-indent: -9999px;
     width: 3.5rem;
     height: 1.5rem;
-    background-color: hsl(223, 50%, 87%);
+    background-color: var(--light-grayish-blue-toggle);
     display: block;
     border-radius: 6.25rem;
     position: relative;
@@ -168,7 +176,7 @@ label:after {
     left: 0.3rem;
     width: 1rem;
     height: 1rem;
-    background: #fff;
+    background: var(--white);
     border-radius: 5.6rem;
     transition: 0.3s;
 }
@@ -180,17 +188,17 @@ label:hover {
 input:checked+label:after {
     left: calc(100% - 5px);
     transform: translateX(-100%);
-    background: #fff;
+    background: var(--white);
 }
 
 hr {
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
     width: 100%;
     position: absolute;
     top: 55%;
     left: 0;
     height: 1px;
-    background: hsl(223, 50%, 87%);
+    background: var(--light-grayish-blue-toggle);
 }
 
 .benefits {
@@ -202,26 +210,26 @@ hr {
 .benefits ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: hsl(225, 20%, 60%);
+    gap: 0.6rem;
+    color: var(--grayish-blue);
 }
 
 .benefits li img {
-    margin-right: 15px;
+    margin-right: 0.9rem;
 }
 
 button {
-    background: hsl(227, 35%, 25%);
-    color: hsl(226, 100%, 87%);
-    padding: 10px 50px;
+    background: var(--dark-desatured-blue);
+    color: var(--pale-blue);
+    padding: 0.6rem 3.1rem;
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     transition: 0.3s;
 }
 
 button:hover {
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
 }
 
